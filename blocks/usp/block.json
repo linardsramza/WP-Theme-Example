@@ -1,0 +1,25 @@
+{
+	"name": "acf/usp",
+	"title": "USP",
+	"category": "widgets",
+	"icon": "networking",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "usp.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

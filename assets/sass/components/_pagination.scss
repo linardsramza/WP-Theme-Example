@@ -1,0 +1,25 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	column-gap: 8px;
+	.page-numbers {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: $regular;
+		font-size: 14px;
+		text-decoration: none;
+		border-radius: 50%;
+		transition: .2s;
+		&:hover:not(.dots):not(.current) {
+			color: $white;
+			background-color: $hover-blue;
+		}
+		&.current {
+			color: $white;
+			background-color: $dark-blue;
+		}
+	}
+}

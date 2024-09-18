@@ -1,0 +1,72 @@
+/*
+** Resetting the width to allow our ACF blocks to look good
+*/
+body.gutenberg-editor-page .editor-post-title__block,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+	max-width: 100% !important;
+}
+/*wp-block wp-block-post-title block-editor-block-list__block editor-post-title editor-post-title__input rich-text*/
+.block-editor__container .wp-block:not(.editor-post-title) {
+	max-width: 100% !important;
+}
+
+/*
+** Min-height and border to allow for easier block editing in the admin
+*/
+.block-editor__container .block-editor-block-list__block:not(.editor-post-title) {
+	border: 1px solid lightgray;
+	min-height: 50px;
+}
+
+/*
+** Fixes to problem with new Gutenberg requiring the paragraph block
+** which we remove in our base theme
+*/
+.block-editor-button-block-appender {
+	padding: 0 !important;
+	width: 24px !important;
+	height: 24px !important;
+}
+
+/*
+** Make the sidebar wider to when editing a page
+*/
+@media screen and (min-width: 900px) {
+	.interface-complementary-area {
+		width: 380px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.interface-complementary-area {
+		width: 440px;
+	}
+}
+
+/*
+** Position plus icon at the bottom of the page
+*/
+
+.block-list-appender {
+	margin-top: 40px !important;
+	margin-bottom: 40px !important;
+}
+
+.block-library-block__reusable-block-container .block-list-appender {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.block-editor-button-block-appender.components-button.components-button {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block !important;
+	background: black;
+	color: white;
+}
+
+html :where(.wp-block) {
+	margin-top: 0;
+	margin-bottom: 0;
+}

@@ -1,0 +1,90 @@
+.eu-control-form {
+	.container {
+		@include media-breakpoint-down(md) {
+			padding: 0;
+			border-radius: 0;
+		}
+	}
+	&__wrapper {
+		background: $light-gray;
+		@include media-breakpoint-up(md) {
+			display: flex;
+			border-radius: 8px;
+		}
+	}
+	&__content {
+		padding: 32px 20px;
+		@include media-breakpoint-up(md) {
+			flex-shrink: 0;
+			flex-basis: 50.6%;
+			padding: 40px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 64px 56px 64px 40px;
+		}
+	}
+	&__image {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		min-height: 275px;
+		@include media-breakpoint-up(md) {
+			flex-basis: 49.4%;
+			min-height: 535px;
+		}
+	}
+	&__title {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 12px;
+		}
+	}
+	&__description {
+		margin-bottom: 20px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 32px;
+		}
+	}
+	&__registration-info {
+		max-height: 0;
+		transition: max-height .2s;
+		overflow: hidden;
+	}
+	&__message {
+		display: flex;
+		gap: 16px;
+		border: 1px solid $dark-blue;
+		border-radius: 4px;
+		padding: 16px 20px;
+		margin-bottom: 24px;
+		.icon {
+			flex-shrink: 0;
+			font-size: 24px;
+			@include media-breakpoint-up(md) {
+				font-size: 28px;
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		label {
+			font-weight: $regular;
+			margin-bottom: 4px;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 8px;
+			}
+		}
+		#registration-number {
+			margin-bottom: 16px;
+			&::placeholder {
+				color: $placeholder-color;
+			}
+		}
+		input[type="submit"] {
+			margin-left: auto;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+		}
+	}
+}

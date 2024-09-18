@@ -1,0 +1,25 @@
+{
+	"name": "acf/workshop-description-shortcode",
+	"title": "Workshop description shortcode",
+	"category": "workshop-blocks",
+	"icon": "info-outline",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "workshop-description-shortcode.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

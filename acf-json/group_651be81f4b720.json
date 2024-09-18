@@ -1,0 +1,56 @@
+{
+    "key": "group_651be81f4b720",
+    "title": "Settings - News",
+    "fields": [
+        {
+            "key": "field_651be81f17580",
+            "label": "Background position",
+            "name": "background_position",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Used on News listing block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "top-left": "Top left",
+                "top-right": "Top right",
+                "top-center": "Top center",
+                "bottom-left": "Bottom left",
+                "bottom-right": "Bottom right",
+                "bottom-center": "Bottom center"
+            },
+            "default_value": "center",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1696331412
+}

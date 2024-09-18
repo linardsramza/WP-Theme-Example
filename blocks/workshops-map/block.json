@@ -1,0 +1,32 @@
+{
+	"name": "acf/workshops-map",
+	"title": "Workshops map",
+	"category": "widgets",
+	"icon": "location-alt",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "workshops-map.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true,
+	"themeVendorScripts": [
+		"index.min.js",
+		"choices.min.js"
+	],
+	"themeVendorStyles": [
+		"choices.min.css"
+	]
+}

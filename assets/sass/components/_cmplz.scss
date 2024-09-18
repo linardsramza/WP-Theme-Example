@@ -1,0 +1,27 @@
+// Complianz (you can set most CSS changes directly in admin but smaller additions can be made here)
+
+body #cmplz-manage-consent .cmplz-manage-consent {
+    left: 0;
+    -webkit-animation: none;
+    animation: none;
+    bottom: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    @include background-image(cookie, svg);
+    background-size: 35px 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    background-color: $dark-blue;
+    border-top-left-radius: 0;
+}
+
+.cmplz-cookiebanner .cmplz-message {
+
+    a {
+        font-size: 14px;
+    }
+}

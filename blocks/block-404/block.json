@@ -1,0 +1,25 @@
+{
+	"name": "acf/block-404",
+	"title": "Block 404",
+	"category": "template-blocks",
+	"icon": "dismiss",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "block-404.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

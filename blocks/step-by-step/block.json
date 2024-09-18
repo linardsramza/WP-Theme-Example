@@ -1,0 +1,25 @@
+{
+	"name": "acf/step-by-step",
+	"title": "Step by step",
+	"category": "common",
+	"icon": "networking",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "step-by-step.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

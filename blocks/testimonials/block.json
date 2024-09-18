@@ -1,0 +1,31 @@
+{
+	"name": "acf/testimonials",
+	"title": "Testimonials",
+	"category": "widgets",
+	"icon": "editor-quote",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "testimonials.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true,
+	"themeVendorScripts": [
+		"swiper-bundle.min.js"
+	],
+	"themeVendorStyles": [
+		"swiper-bundle.min.css"
+	]
+}

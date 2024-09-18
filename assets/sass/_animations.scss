@@ -1,0 +1,115 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: auto;
+        transform: translateY(0px);
+    }
+}
+
+@mixin fadeInLeft($delay: 0.1) {
+    animation: fadeInLeft 0.4s backwards ease;
+	-webkit-animation: fadeInLeft 0.4s backwards ease;
+    animation-delay: #{$delay}s;
+	-webkit-animation-delay: #{$delay}s;
+}
+@mixin rotateIn($delay: 0.1, $rotateTo: 349) {
+
+    @keyframes rotateIn {
+        from {
+            opacity: 0;
+            transform: rotate(0);
+            -o-transform: rotate(0);
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+            scale: 0;
+        }
+        to {
+            opacity: auto;
+            transform: rotate(#{$rotateTo}deg);
+            -o-transform: rotate(#{$rotateTo}deg);
+            -webkit-transform: rotate(#{$rotateTo}deg);
+            -moz-transform: rotate(#{$rotateTo}deg);
+            -ms-transform: rotate(#{$rotateTo}deg);
+            scale: 1;
+        }
+    }
+
+    @-webkit-keyframes rotateIn {
+        from {
+            opacity: 0;
+            transform: rotate(0);
+            -o-transform: rotate(0);
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+            scale: 0;
+        }
+        to {
+            opacity: auto;
+            transform: rotate(#{$rotateTo}deg);
+            -o-transform: rotate(#{$rotateTo}deg);
+            -webkit-transform: rotate(#{$rotateTo}deg);
+            -moz-transform: rotate(#{$rotateTo}deg);
+            -ms-transform: rotate(#{$rotateTo}deg);
+            scale: 1;
+        }
+    }
+
+    animation: rotateIn 1s backwards ease;
+    -webkit-animation: rotateIn 1s backwards ease;
+	animation-delay: #{$delay}s;
+	-webkit-animation-delay: #{$delay}s;
+}
+@mixin rotateOut($delay: 0.1, $rotateTo: 370) {
+
+    @keyframes rotateOut {
+        from {
+            opacity: 0;
+            transform: rotate(0);
+            -o-transform: rotate(0);
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+            scale: 0;
+        }
+        to {
+            opacity: auto;
+            transform: rotate(#{$rotateTo}deg);
+            -o-transform: rotate(#{$rotateTo}deg);
+            -webkit-transform: rotate(#{$rotateTo}deg);
+            -moz-transform: rotate(#{$rotateTo}deg);
+            -ms-transform: rotate(#{$rotateTo}deg);
+            scale: 1;
+        }
+    }
+
+    @-webkit-keyframes rotateOut {
+        from {
+            opacity: 0;
+            transform: rotate(0);
+            -o-transform: rotate(0);
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+            scale: 0;
+        }
+        to {
+            opacity: auto;
+            transform: rotate(#{$rotateTo}deg);
+            -o-transform: rotate(#{$rotateTo}deg);
+            -webkit-transform: rotate(#{$rotateTo}deg);
+            -moz-transform: rotate(#{$rotateTo}deg);
+            -ms-transform: rotate(#{$rotateTo}deg);
+            scale: 1;
+        }
+    }
+
+    animation: rotateOut 1s backwards ease;
+    -webkit-animation: rotateOut 1s backwards ease;
+    animation-delay: #{$delay}s;
+    -webkit-animation-delay: #{$delay}s;
+}

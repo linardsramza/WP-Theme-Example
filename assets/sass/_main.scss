@@ -1,0 +1,159 @@
+body {
+	font-family: Gotham;
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	color: $dark-blue;
+	font-weight: $light;
+	font-size: 16px;
+	line-height: 1.5;
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+	a {
+		color: $dark-blue;
+		font-weight: $regular;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.block {
+
+	&.mt-none {
+		margin-top: 0!important;
+	}
+	&.mt-xl {
+		@include block-spacing('top', 'large');
+	}
+	&.mt-md {
+		@include block-spacing('top', 'medium');
+	}
+	&.mt-xs {
+		@include block-spacing('top', 'small');
+	}
+
+	&.mb-none {
+		margin-bottom: 0!important;
+	}
+	&.mb-xl {
+		@include block-spacing('bottom', 'large');
+	}
+	&.mb-md {
+		@include block-spacing('bottom', 'medium');
+	}
+	&.mb-xs {
+		@include block-spacing('bottom', 'small');
+	}
+
+	.bg-none {
+		background-color: transparent;
+	}
+
+	.bg-primary {
+		background-color: $dark-blue;
+	}
+
+	.bg-secondary {
+		background-color: $light-blue;
+	}
+
+	.bg-gray, .bg-grey{
+		background-color: $soft-gray;
+	}
+
+	.bg-yellow {
+		background-color: $yellow;
+	}
+
+	.bg-red {
+		background-color: $red;
+	}
+
+	.bg-light-gray {
+		background-color: $light-gray;
+	}
+
+	.text-primary {
+		color: $dark-blue;
+	}
+
+	.text-secondary {
+		color: $light-blue;
+	}
+
+	.text-grey {
+		color: $soft-gray;
+	}
+
+	.text-yellow {
+		color: $yellow;
+	}
+
+	.text-red {
+		color: $red;
+	}
+
+	.text-white {
+		color: $white;
+	}
+}
+
+.background {
+	
+	&--center {
+		background-position: center center;
+	}
+
+	&--top-left {
+		background-position: top left;
+	}
+
+	&--top-right {
+		background-position: top right;
+	}
+
+	&--bottom-right {
+		background-position: bottom right;
+	}
+
+	&--bottom-left {
+		background-position: bottom left;
+	}
+
+	&--top-center {
+		background-position: top center;
+	}
+
+	&--bottom-center {
+		background-position: bottom center;
+	}
+}
+
+main {
+	padding-top: 80px;
+	@include media-breakpoint-up(menu-lg) {
+		padding-top: 104px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-top: 84px;
+	}
+
+	.hero:first-of-type {
+		margin-top: -0px!important;
+		@include media-breakpoint-up(menu-lg) {
+			margin-top: -104px!important;
+		}
+	}
+
+	.iframe:first-of-type {
+		margin-top: -0px!important;
+		@include media-breakpoint-up(lg) {
+			margin-top: -104px!important;
+		}
+	}
+}

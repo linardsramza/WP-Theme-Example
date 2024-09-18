@@ -1,0 +1,55 @@
+.workshop-description {
+    &__description {
+        margin-bottom: 32px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 35px;
+        padding-inline-start: 35px!important;
+
+        li {
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                width: calc(50% - 40px);
+                margin-right: 40px;
+            }
+
+            &:before {
+                left: -35px!important;
+                color: $light-blue;
+            }
+
+            @include media-breakpoint-up(sm) {
+                &:nth-child(n + 11) {
+                    display: none;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                &:nth-child(n + 5) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__show-all {
+        font-size: 18px;
+        font-weight: $regular;
+        cursor: pointer;
+
+        &.more-then-4 {
+            @include media-breakpoint-up(sm) {
+                display: none;
+            }
+        }
+
+        i {
+            margin-left: 10px;
+        }
+
+    }
+}

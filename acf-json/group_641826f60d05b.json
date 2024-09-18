@@ -1,0 +1,56 @@
+{
+    "key": "group_641826f60d05b",
+    "title": "Partial – Background",
+    "fields": [
+        {
+            "key": "field_641826f60f389",
+            "label": "Background color",
+            "name": "background_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg-none": "None",
+                "bg-primary": "Dark blue",
+                "bg-secondary": "Light blue",
+                "bg-gray": "Gray",
+                "bg-yellow": "Yellow",
+                "bg-red": "Red",
+                "bg-light-gray": "Light gray"
+            },
+            "default_value": "bg-primary",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/guidelines"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1683906809
+}

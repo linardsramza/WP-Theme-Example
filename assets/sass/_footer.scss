@@ -1,0 +1,474 @@
+.site-footer {
+    padding: 64px 0;
+    background-color: $dark-blue; 
+    color: $white;
+
+    &--dashed-line {
+        @include dottedLine('footer');
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 40px 0;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 48px;
+        margin-bottom: 60px;
+
+        @media only screen and (max-width: 1270px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+
+        @include media-breakpoint-down(xl) {
+            gap: 28px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+        }
+
+        &--item {
+            min-width: 215px;
+
+            &:last-child {
+                
+                .site-footer__top--title {
+
+                    &:before {
+                        content: '\f095';
+                        @include fa(fas);
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+
+        &--title {
+            margin-bottom: 4px;
+            color: $white;
+            font-weight: $bold;
+            font-size: 24px;
+            line-height: 140%;
+            text-decoration: none;
+        }
+
+        &--description {
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+
+    &__bottom {
+        margin-bottom: 66px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 48px;
+        }
+    }
+
+    .menu-list {
+        margin-bottom: 60px;
+        width: 100%;
+        
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 25px 0;
+            @include fullLine(top, rgba($soft-gray, 0.4));
+            cursor: auto;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &:last-child {
+                @include fullLine(bottom, rgba($soft-gray, 0.4), true);
+            }
+
+            &--title {
+                width: 18%;
+                min-width: 200px;
+
+                @include media-breakpoint-down(xl) {
+                    width: 23%;
+                    flex-basis: 23%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+            }
+
+            &--link {
+                font-size: 20px;
+                line-height: 140%;
+                font-weight: $bold;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            gap: 10px 24px;
+            flex-wrap: wrap;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+
+            &--item {
+                color: $soft-gray;
+                font-size: 16px;
+                font-weight: 350;
+                line-height: 1em;
+                text-decoration: none;
+                margin-top: 2px;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .menu-list__accordion {
+        
+        .accordion__item {
+            background-color: transparent;
+            margin: 0;
+            padding: 25px 0;
+            border: none;
+        }
+
+        .accordion__title {
+            justify-content: flex-start;
+            margin-right: 20px;
+
+            @include media-breakpoint-down(md) {
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 0;
+            }
+
+            &--plus, &--minus {
+                display: none;
+            }
+
+            &--plus {
+
+                @include media-breakpoint-down(md) {
+                    display: flex;
+                }
+            }
+        }
+    
+        .accordion__description {
+            height: auto;
+    
+            @include media-breakpoint-down(md) {
+                height: 0;
+            }
+    
+            >*:first-child {
+                padding-top: 0;
+    
+                @include media-breakpoint-down(md) {
+                    padding-top: 24px;
+                }
+            }
+        }
+    }
+
+    .documents-list {
+        display: flex;
+        gap: 24px;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &--item {
+            color: $white;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 170%;
+            font-weight: $light;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+
+    &__title {
+        margin: 0 0 4px;
+        color: $white;
+    }
+
+    &__description {
+        font-size: 14px;
+        margin: 0 0 24px;
+        line-height: 150%;
+    }
+
+    a {
+        @include size(48px);
+        border: 1px solid $white;
+        background-color: $white;
+        border-radius: 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-blue;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+}
+
+.subscribe {
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 50px;
+    }
+
+    .gform_wrapper {
+
+        .gform_body {
+
+            .gform_fields {
+
+                .gfield {
+
+                    .gfield_label {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gform_fields {
+        gap: 0 !important;
+    }
+
+    &__title {
+        color: $white;
+        margin-bottom: 4px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 325;
+    }
+    
+    form {
+        position: relative;
+
+        .ginput_container_email {
+            height: 50px;
+            background-color: $white;
+            border-radius: 4px;
+
+            input {
+                background-color: transparent;
+                height: inherit;
+                border: 0;
+            }
+        }
+
+        .gfield_label {
+            color: $white !important;
+        }
+        
+        .gform_footer {
+            position: absolute;
+            right: 1px;
+            top: 35px;
+            padding: 0 !important;
+            margin: 0 !important;
+
+            @include media-breakpoint-down(md) {
+                top: 32px;
+                right: 1px;
+            }
+
+            .btn {
+                height: 48px;
+                margin: 0 !important; 
+                padding: 15px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:before {
+                    content: none;
+
+                    @include media-breakpoint-down(lg) {
+                        content: "\f1d8";
+                        @include fa(fas);
+                    }
+                }
+
+                @include media-breakpoint-down(lg) {
+                    padding: 15px;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                @include media-breakpoint-down(md) {
+                    height: 48px;
+                }
+            }
+        }
+    }
+
+    .gform_wrapper.gravity-theme .gform_consent {
+        margin-bottom: 0;
+
+        legend {
+            display: none !important;
+        }
+    }
+}
+
+#puzzle_chat_placeholder {
+    // filter: drop-shadow(0px 0px 10px rgba(173, 173, 173, 0.8));
+
+    .intelecomchatstarter {
+        display: block !important;
+        right: 20px;
+        bottom: 20px;
+        border: 0;
+        border-radius: 0;
+        background: none;
+    }
+
+    .intelecomchatheader, .intelecomchat__button.start_chat {
+        background-color: $dark-blue;
+    }
+
+    .itc_Chat__starter {
+        filter: drop-shadow(0px 0px 10px rgba(173, 173, 173, 0.4));
+        z-index: 2;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -35px;
+            left: -25px;
+            background-color: $white;
+            clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0% 50%);
+            @include size(72px, 66px);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -30px;
+            clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0% 50%);
+            z-index: 3;
+            @include size(62px, 56px);
+            overflow: hidden;
+            background-color: $dark-blue;
+            @include background-image(chat, svg);
+            background-position: center;
+            z-index: 5;
+        }
+    }
+}
+
+[data-puzzel-chat].web:not([data-view="bubble"]):not(.is-dragged):not(.is-resized) {
+    
+    h1 {
+        margin-bottom: 0;
+        color: $white;
+    }
+
+    header {
+        background-color: $dark-blue;
+    }
+}
+body [data-puzzel-chat][data-view="bubble"] {
+    display: block !important;
+    right: 20px;
+    bottom: 20px;
+    top: unset !important;
+    left: unset !important;
+    transform: none !important;
+    border: 0;
+    border-radius: 0;
+    background: none;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    button {
+        filter: drop-shadow(0px 0px 10px rgba(173, 173, 173, 0.4));
+        z-index: 2;
+        cursor: pointer;
+        background-color: transparent;
+        border-color: transparent;
+    
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    
+        svg {
+            display: none;
+        }
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            background-color: $white;
+            clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0% 50%);
+            @include size(72px, 66px);
+        }
+    
+        &:after {
+            content: '';
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0% 50%);
+            z-index: 3;
+            @include size(62px, 56px);
+            overflow: hidden;
+            background-color: $dark-blue;
+            @include background-image(chat, svg);
+            background-position: center;
+            z-index: 5;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.block-404 {
+	&.mt-xl {
+		margin-top: 60px;
+		@include media-breakpoint-up(md) {
+			margin-top: 104px;
+		}
+	}
+	&.mb-xl {
+		margin-bottom: 60px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 112px;
+		}
+	}
+	&__wrapper {
+		max-width: 641px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__image {
+		background-image: url('../../dist/img/icon-bg.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		@include media-breakpoint-up(md) {
+			height: 200px;
+			margin-bottom: 24px;
+		}
+		svg, img {
+			max-height: 64px;
+			@include media-breakpoint-up(md) {
+				max-height: 101px;
+			}
+		}
+	}
+	&__pretitle {
+		margin-bottom: 0;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 4px;
+		}
+	}
+	&__title {
+		margin-bottom: 20px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 16px;
+		}
+	}
+	&__text {
+		font-weight: $regular;
+		margin-bottom: 0;
+	}
+}

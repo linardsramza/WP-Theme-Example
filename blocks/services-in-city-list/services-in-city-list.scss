@@ -1,0 +1,18 @@
+.services-in-city-list {
+	&__pre_title, &__title, &__description {
+		max-width: 779px;
+	}
+	&__pre_title {
+		margin-bottom: 8px;
+	}
+	&__description {
+		margin-bottom: 40px;
+	}
+	.row {
+		row-gap: 12px;
+	}
+
+	.card {
+		padding: 32px 20px;
+	}
+}

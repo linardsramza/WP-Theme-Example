@@ -1,0 +1,25 @@
+{
+	"name": "acf/faq",
+	"title": "FAQ",
+	"category": "widgets",
+	"icon": "welcome-learn-more",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "faq.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

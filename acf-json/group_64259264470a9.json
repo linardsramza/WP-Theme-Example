@@ -1,0 +1,55 @@
+{
+    "key": "group_64259264470a9",
+    "title": "Partial - Text-color",
+    "fields": [
+        {
+            "key": "field_6425926439880",
+            "label": "Text color",
+            "name": "text_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-white": "White",
+                "text-primary": "Dark blue",
+                "text-secondary": "Light blue",
+                "text-grey": "Grey",
+                "text-yellow": "Yellow",
+                "text-red": "Red"
+            },
+            "default_value": "text-white",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/guidelines"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680184258
+}

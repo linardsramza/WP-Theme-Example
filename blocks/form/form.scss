@@ -1,0 +1,113 @@
+.form {
+	&__pretitle {
+		margin-bottom: 4px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 8px;
+		}
+	}
+	&__text-wrapper {
+		max-width: 328px;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 32px;
+		}
+	}
+	&__search-field-placeholder {
+		display: none;
+	}
+	.gform_wrapper {
+		background: $light-gray;
+		padding: 32px 20px;
+		@include media-breakpoint-up(md) {
+			border-radius: 8px;
+			padding: 64px 40px;
+		}
+		@include media-breakpoint-down(md) {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		input:not([type='checkbox']):not([type='radio']), select, textarea, .choices {
+			width: 100%;
+		}
+		.gform_fields {
+			@include media-breakpoint-up(md) {
+				display: flex;
+				flex-wrap: wrap;
+				column-gap: 24px;
+			}
+		}
+		.gfield {
+			&.hidden_label {
+				.gfield_label {
+					display: none;
+				}
+			}
+			@include media-breakpoint-up(md) {
+				flex-basis: 100%;
+				&--width-half {
+					flex-basis: calc(50% - 12px);
+				}
+			}
+		}
+		.ginput_container_select:not(.select-workshop .ginput_container_select) {
+			position: relative;
+			select {
+				appearance: none;
+			}
+			&:after {
+				font-family: 'Font Awesome 6 Pro';
+				content: '\f078';
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 1;
+				position: absolute;
+				right: 16px;
+				bottom: 50%;
+    			transform: translateY(50%);
+			}
+		}
+
+		input[type="checkbox"] {
+			background: transparent;
+			transition: none;
+			border: 1px solid $dark-blue;
+			&:checked {
+				background: $dark-blue;
+			}
+			+ label {
+				max-width: 492px;
+				padding-left: 12px;
+			}
+		}
+		.gform_footer {
+			text-align: right;
+			button {
+				@include media-breakpoint-down(md) {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__link {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			bottom: -2px;
+			height: 2px;
+			background: $dark-blue;
+			transition: opacity .2s;
+		}
+		i {
+			margin-left: 12px;
+		}
+		&:hover {
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+}

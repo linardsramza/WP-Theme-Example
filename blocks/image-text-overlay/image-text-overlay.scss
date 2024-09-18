@@ -1,0 +1,128 @@
+.image-text-overlay {
+
+    &__background {
+        padding: 98px 56px;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: $global-radius;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            justify-content: flex-start;
+            max-height: none;
+        }
+
+        @include media-breakpoint-down(md) {
+            min-height: 600px;
+            padding: 98px $gutter 0;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-height: 480px;
+        }
+
+        &--dotted-line {
+            @include dottedLine();
+    
+            &:before {
+                right: unset;
+                left: 0;
+                transform: scaleX(-1);
+            }
+    
+            @include media-breakpoint-down(md) {
+                overflow: visible;
+    
+                &:before {
+                    content: none;
+                }
+            }
+        }
+    
+        &--swap {
+            justify-content: flex-start;
+
+            @include media-breakpoint-down(md) {
+                justify-content: flex-end;
+            }
+    
+            &:before {
+                right: 0;
+                left: unset;
+                transform: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        &.mb-none {
+            margin-bottom: 200px;
+        }
+        &.mb-xl {
+            margin-bottom: calc(#{map-get($spacing, large-md)} + 200px);
+        }
+        &.mb-md {
+            margin-bottom: calc(#{map-get($spacing, medium-md)} + 200px);
+        }
+        &.mb-xs {
+            margin-bottom: calc(#{map-get($spacing, small-md)} + 200px);
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+
+        &.mb-xl {
+            margin-bottom: calc(#{map-get($spacing, large-xs)} + 200px);
+        }
+        &.mb-md {
+            margin-bottom: calc(#{map-get($spacing, medium-xs)} + 200px);
+        }
+        &.mb-xs {
+            margin-bottom: calc(#{map-get($spacing, small-xs)} + 200px);
+        }
+    }
+
+    &__content {
+        padding: 64px 40px;
+        display: flex;
+        flex-direction: column;
+        width: 445px;
+        word-break: break-word;
+        border-radius: $global-radius;
+        z-index: 2;
+
+        @include media-breakpoint-down(md) {
+            width: 95%;
+            max-width: unset;
+            margin-bottom: -200px !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 32px 24px;
+            width: 90%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        color: inherit;
+    }
+
+    &__description {
+        margin-bottom: 40px;
+        color: inherit;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .btn {
+        width: fit-content;
+    }
+}

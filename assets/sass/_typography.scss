@@ -1,0 +1,102 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $dark-blue;
+    font-weight: $bold;
+    margin: 0 0 16px 0;
+    @include media-breakpoint-up(md) {
+        margin: 0 0 20px 0;
+    }
+}
+h1, .h1 {
+    font-size: 36px;
+    line-height: 1.25;
+    @include media-breakpoint-up(md) {
+        font-size: 52px;
+    }
+}
+h2, .h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    @include media-breakpoint-up(md) {
+        font-size: 40px;
+    }
+}
+h3, .h3 {
+    font-size: 26px;
+    line-height: 1.35;
+    @include media-breakpoint-up(md) {
+        font-size: 32px;
+    }
+}
+h4, .h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    @include media-breakpoint-up(md) {
+        font-size: 24px;
+    }
+}
+h5, .h5 {
+    font-size: 18px;
+    line-height: 1.4;
+    @include media-breakpoint-up(md) {
+        font-size: 20px;
+    }
+}
+h6, .h6 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 0 16px 0;
+    a {}
+    &.preamble {
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 1.5;
+        @include media-breakpoint-up(md) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+    &.mb-large {
+        margin-bottom: 24px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+        }
+    }
+    &.strong {
+        font-weight: $bold;
+    }
+}
+
+a {
+    &.email-link ,&.phone-link {
+        font-weight: $regular;
+        text-decoration: none;
+        &:before {
+            font-family: 'Font Awesome 6 Pro';
+            font-weight: 900;
+            margin-right: 12px;
+            @include media-breakpoint-up(md) {
+                margin-right: 16px;
+            }
+        }
+    }
+    &.email-link:before {
+        content: '\f0e0';
+    }
+    &.phone-link:before {
+        content: '\f095';
+    }
+    &.btn {
+        &.email-link, &.phone-link {
+            &:before {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+input::placeholder {
+    color: $dark-blue;
+}

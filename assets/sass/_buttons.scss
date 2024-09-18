@@ -1,0 +1,114 @@
+.btn {
+	display: inline-block;
+	color: $white;
+	font-weight: $regular;
+	font-size: 16px;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 14px 23px;
+	border: 1px solid transparent;
+	transition: .2s;
+	cursor: pointer;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 23px 35px;
+	}
+	&--primary {
+		color: $white;
+		background-color: $dark-blue;
+		border-color: $dark-blue;
+		&:hover {
+			background-color: $hover-blue;
+			border-color: $hover-blue;
+		}
+	}
+	&--secondary {
+		color: $dark-blue;
+		background-color: transparent;
+		border-color: $dark-blue;
+		&:hover {
+			color: $white;
+			background-color: $hover-blue;
+			border-color: $hover-blue;
+		}
+	}
+	&--yellow {
+		color: $dark-blue;
+		background-color: $yellow;
+		border-color: $yellow;
+		&:hover {
+			color: $white;
+			background-color: $hover-blue;
+			border-color: $hover-blue;
+		}
+	}
+	&--red {
+		color: $white;
+		background-color: $red;
+		border-color: $red;
+		&:hover {
+			color: $white;
+			background-color: $hover-blue;
+			border-color: $hover-blue;
+		}
+	}
+	&--white {
+		color: $dark-blue;
+		background-color: $white;
+		border-color: $white;
+		&:hover {
+			color: $hover-blue;
+			background-color: $light-gray;
+			border-color: $hover-blue;
+		}
+	}
+	&--blue-outline {
+		color: $dark-blue;
+		background-color: transparent;
+		border-color: $dark-blue;
+		&:hover {
+			background-color: $hover-blue;
+			border-color: $hover-blue;
+			color: $white;
+		}
+	}
+	&--white-outline {
+		color: $white;
+		background-color: transparent;
+		border-color: $white;
+		&:hover {
+			color: $dark-blue;
+			background-color: $white;
+			border-color: $dark-blue;
+		}
+	}
+	&--small {
+		font-size: 12px;
+		line-height: 1;
+		padding: 11px 15px;
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+			line-height: 1;
+			padding: 14px 23px;
+		}
+	}
+	&--large {
+		font-size: 16px;
+		line-height: 1px;
+		padding: 11px 23px;
+		@include media-breakpoint-up(md) {
+			font-size: 18px;
+			line-height: 22px;
+			padding: 23px 35px;
+		}
+	}
+	&--100-mobile {
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
