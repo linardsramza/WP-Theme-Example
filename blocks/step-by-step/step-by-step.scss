@@ -1,0 +1,105 @@
+.step-by-step {
+	text-align: center;
+	@include media-breakpoint-up(md) {
+		.container {
+			max-width: calc($grid + (60px * 2));
+		}
+	}
+	&__title {
+		margin-bottom: 8px;
+	}
+	.steps {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		row-gap: 96px;
+		margin: 32px 0 32px 0;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			row-gap: 32px;
+			padding: 0 48px;
+			margin: 64px 0 64px 0;
+		}
+		&--gap-small {
+			column-gap: 80px;
+			@include media-breakpoint-up(md) {
+				.step {
+					&:not(:last-child):after {
+						left: calc(100% + 24px);
+					}
+				}
+			}
+		}
+		&--gap-medium {
+			column-gap: 96px;
+			@include media-breakpoint-up(md) {
+				.step {
+					&:not(:last-child):after {
+						left: calc(100% + 32px);
+					}
+				}
+			}
+		}
+		&--gap-large {
+			column-gap: 112px;
+		}
+	}
+	.step {
+		position: relative;
+		max-width: 290px;
+		@include media-breakpoint-up(md) {
+			max-width: 250px;
+		}
+		@include media-breakpoint-up(lg) {
+			&--narrow {
+				max-width: 212px;
+			}
+			&--medium {
+				max-width: 272px;
+			}
+			&--wide {
+				max-width: 290px;
+			}
+		}
+		&__image {
+			background-image: url('../../dist/img/icon-bg.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+			@include media-breakpoint-up(md) {
+				height: 107px;
+				margin-bottom: 32px;
+			}
+		}
+		&__title {
+			margin-bottom: 12px;
+		}
+		&__text {
+			margin-bottom: 0;
+		}
+		&:not(:last-child):after {
+			font-family: 'Font Awesome 6 Pro';
+			content: '\f178';
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 1;
+			position: absolute;
+			left: 50%;
+			top: calc(100% + 32px);
+			transform: translateX(-50%) rotate(90deg);
+			@include media-breakpoint-up(md) {
+				left: calc(100% + 40px);
+				top: 157px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

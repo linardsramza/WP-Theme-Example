@@ -1,0 +1,25 @@
+{
+	"name": "acf/cta",
+	"title": "Text columns",
+	"category": "common",
+	"icon": "media-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cta.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

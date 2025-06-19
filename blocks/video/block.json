@@ -1,0 +1,25 @@
+{
+	"name": "acf/video",
+	"title": "Video",
+	"category": "common",
+	"icon": "format-video",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "video.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true
+}

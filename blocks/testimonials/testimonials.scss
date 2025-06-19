@@ -1,0 +1,109 @@
+.testimonials {
+
+    &__slider {
+        overflow: hidden;
+        
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 1fr;
+            gap: 24px;
+
+            @include media-breakpoint-down(xl) {
+                display: flex;
+                gap: 0;
+            }
+        }
+
+        .swiper-slide {
+            border-radius: $global-radius;
+            overflow: hidden;
+            height: auto;
+        }
+    }
+
+    &__description {
+        margin-bottom: 40px;
+
+        @include media-breakpoint-up(lg) {
+            width: 70%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 55%;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        
+        @include media-breakpoint-down(xl) {
+            flex-direction: column;
+        }
+
+        &--image {
+            flex-basis: 47%;
+
+            @include media-breakpoint-down(xl) {
+                flex-basis: auto;
+                height: 232px;
+            }
+            
+            img {
+                vertical-align: top;
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            padding: 65px 32px;
+            flex-basis: 53%;
+            color: $white;
+
+            @include media-breakpoint-down(xl) {
+                flex-basis: auto;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding: 28px 20px;
+            }
+        }
+
+        &--quote {
+            margin-bottom: 32px;
+            font-weight: $regular;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 145%;
+
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        
+
+        &--author {
+            font-size: 14px;
+            font-weight: $regular;
+            line-height: 150%;
+            padding-left: 20px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+    }
+}

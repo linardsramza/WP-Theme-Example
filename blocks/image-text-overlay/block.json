@@ -1,0 +1,25 @@
+{
+	"name": "acf/image-text-overlay",
+	"title": "Image text overlay",
+	"category": "design",
+	"icon": "megaphone",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "image-text-overlay.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

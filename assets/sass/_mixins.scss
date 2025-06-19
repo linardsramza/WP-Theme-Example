@@ -1,0 +1,181 @@
+// Input styles
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+// Media queries
+@mixin media-breakpoint-up($breakpoint) { 
+	@if map-has-key($grid-breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($grid-breakpoints, $breakpoint)+1}) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+			+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}
+
+@mixin media-breakpoint-down($breakpoint) { 
+	@if map-has-key($grid-breakpoints, $breakpoint) {
+		@media (max-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+			+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}
+
+@mixin block-spacing($position, $size) {
+	$size-array: #{map-get($spacing, $size)};
+	@if $position == top {
+		margin-top: #{map-get($spacing, $size + -xs)};
+		@include media-breakpoint-up(md) {
+			margin-top: #{map-get($spacing, $size + -md)};
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: #{map-get($spacing, $size + -lg)};
+		}
+	}
+	@if $position == bottom {
+		margin-bottom: #{map-get($spacing, $size + -xs)};
+		@include media-breakpoint-up(md) {
+			margin-bottom: #{map-get($spacing, $size + -md)};
+		}
+		@include media-breakpoint-up(lg) {
+			margin-bottom: #{map-get($spacing, $size + -lg)};
+		}
+	}
+}
+
+// Can choose font awesome weights
+@mixin fa($weight: far, $fontfamily: pro) {
+	font-family: 'Font Awesome 6 Pro';
+	font-style: normal;
+  
+	@if $weight == fas {
+		font-weight: 900;
+	} @else if $weight == far {
+	  font-weight: 400;
+	} @else if $weight == fal {
+		font-weight: 300;
+	} @else if $weight == fab {
+	}
+  
+	@if $fontfamily == pro {
+	  font-family: 'Font Awesome 6 Pro';
+	} 
+	@else if $fontfamily == brand {
+	  font-family: 'Font Awesome 6 Brands';
+	}
+}
+
+@mixin background-image($name, $type: 'png') {
+	background-image: url('../img/#{$name}.#{$type}');
+	background-repeat: no-repeat;
+}
+
+// Sizing stuff
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+//Dotted line
+@mixin dottedLine($block: hero, $breakpoint: md) {
+	position: relative;
+	overflow: hidden;
+  
+	&:before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		right: 0;
+		background-repeat: no-repeat;
+    	background-position: left bottom;
+		pointer-events: none;
+
+		@if $block == hero {
+			background-image: url("data:image/svg+xml,%3Csvg width='830' height='569' viewBox='0 0 830 569' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.52293' y1='561.642' x2='825.322' y2='7.36992' stroke='white' stroke-width='24' stroke-dasharray='100 80'/%3E%3C/svg%3E%0A");
+			width: 492px;
+    		bottom: -45px;
+
+			@include media-breakpoint-down($breakpoint) {
+				background-image: url("data:image/svg+xml,%3Csvg width='485' height='337' viewBox='0 0 485 337' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.3096 326.309L6.55462 336.407L0.589844 327.691L15.3448 317.594L21.3096 326.309ZM74.4274 289.957L44.9175 310.153L38.9527 301.437L68.4626 281.242L74.4274 289.957ZM127.545 253.606L98.0353 273.801L92.0705 265.085L121.58 244.89L127.545 253.606ZM180.663 217.254L151.153 237.449L145.188 228.733L174.698 208.538L180.663 217.254ZM233.781 180.902L204.271 201.097L198.306 192.381L227.816 172.186L233.781 180.902ZM286.899 144.55L257.389 164.745L251.424 156.03L280.934 135.834L286.899 144.55ZM340.016 108.198L310.507 128.393L304.542 119.678L334.052 99.482L340.016 108.198ZM393.134 71.8459L363.624 92.0414L357.66 83.3256L387.169 63.1301L393.134 71.8459ZM446.252 35.494L416.742 55.6895L410.777 46.9737L440.287 26.7782L446.252 35.494ZM484.615 9.2398L469.86 19.3375L463.895 10.6218L478.65 0.524013L484.615 9.2398Z' fill='white'/%3E%3C/svg%3E%0A");
+				width: 224px;
+			}
+
+		} @else if $block == footer {
+			background-image: url("data:image/svg+xml,%3Csvg width='830' height='569' viewBox='0 0 830 569' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.52293' y1='561.642' x2='825.322' y2='7.36992' stroke='white' stroke-width='16' stroke-dasharray='60 50'/%3E%3C/svg%3E%0A");
+			width: 218px;
+			bottom: -9px;
+
+			@include media-breakpoint-down($breakpoint) {
+				background-image: url("data:image/svg+xml,%3Csvg width='422' height='425' viewBox='0 0 422 425' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.45173' y1='421.477' x2='418.452' y2='4.47727' stroke='white' stroke-width='10' stroke-dasharray='32 32'/%3E%3C/svg%3E%0A");
+				width: 143px;
+			}
+		} 
+	}
+}
+
+// Adds full width line before or after element
+@mixin fullLine ($direction: top, $color: #B8C3D9, $both: false) {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        background: $color;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @if $both == true {
+            top: 0;
+        } @else if $direction == bottom {
+            bottom: 0;
+        } @else if $direction == top {
+            top: 0;
+        }
+    }
+
+    @if $both == true {
+
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            background: $color;
+            bottom: 0;
+        }
+    }
+}
+
+@mixin custom-scroll-bar() {
+	overflow-y: scroll;
+	scrollbar-width: auto;
+	scrollbar-color: $dark-blue $white;
+	&::-webkit-scrollbar {
+		height: auto;
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background: $white;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $dark-blue;
+		border-radius: 50px;
+	}
+}

@@ -1,0 +1,119 @@
+.text-columns {
+	> .container {
+		@include media-breakpoint-down(sm) {
+			padding: 0;
+		}
+	}
+	&__title-wrapper {
+		@include media-breakpoint-down(sm) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&.container--narrow {
+			margin: auto;
+		}
+	}
+	&__title {
+		@include media-breakpoint-up(md) {
+			margin-bottom: 24px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		&.light-blue {
+			background-color: $light-blue;
+		}
+		&.dark-blue {
+			background-color: $dark-blue;
+		}
+		&.grayish-blue {
+			background-color: $light-gray;
+		}
+		&:not(.none) {
+			justify-content: center;
+			padding: 64px 0;
+			@include media-breakpoint-up(sm) {
+				padding: 64px 20px;
+				border-radius: 8px;
+			}
+			@include media-breakpoint-up(md) {
+				padding: 96px 40px;
+			}
+		}
+		&.light {
+			*:not(.btn) {
+				color: $white;
+			}
+			.heading {
+				color: $white;
+			}
+		}
+		&.dark {
+			*:not(.btn) {
+				color: $dark-blue;
+			}
+			.heading {
+				color: $dark-blue;
+			}
+		}
+		.container {
+			@include media-breakpoint-up(sm) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		.row {
+			row-gap: 20px;
+			&--medium-gutter {
+				row-gap: 24px;
+				@include media-breakpoint-up(lg) {
+					margin-left: -32px;
+					margin-right: -32px;
+					.row__col {
+						padding-left: 32px;
+						padding-right: 32px;
+					}
+				}
+			}
+			&--wide-gutter {
+				row-gap: 24px;
+				@include media-breakpoint-up(lg) {
+					margin-left: -40px;
+					margin-right: -40px;
+					.row__col {
+						padding-left: 40px;
+						padding-right: 40px;
+					}
+				}
+			}
+			&--inverse-mobile .row__col:first-child {
+				@include media-breakpoint-down(lg){
+					order: 1;
+				}
+			}
+		}
+	}
+	.content {
+		max-width: 915px;
+		*:last-child {
+			margin-bottom: 0;
+		}
+		.btn {
+			margin-top: 8px;
+			margin-right: 16px;
+			@include media-breakpoint-up(md) {
+				margin-top: 24px;
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+    	flex-wrap: wrap;
+    	row-gap: 24px;
+    	column-gap: 20px;
+    	margin-top: 24px;
+		@include media-breakpoint-up(md) {
+			margin-top: 40px;
+		}
+	}
+}

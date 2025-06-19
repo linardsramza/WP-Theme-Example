@@ -1,0 +1,25 @@
+{
+	"name": "acf/eu-control-form",
+	"title": "EU control form",
+	"category": "common",
+	"icon": "forms",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "eu-control-form.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true
+}

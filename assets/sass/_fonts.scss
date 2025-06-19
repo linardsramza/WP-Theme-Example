@@ -1,0 +1,59 @@
+@font-face {
+     font-family: 'Gotham';
+     font-style: normal;
+     font-weight: $light;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-Light_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-Light_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Gotham';
+     font-style: italic;
+     font-weight: $light;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-LightItalic_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-LightItalic_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Gotham';
+     font-style: normal;
+     font-weight: $regular;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-Medium_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-Medium_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Gotham';
+     font-style: italic;
+     font-weight: $regular;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-MediumItalic_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-MediumItalic_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Gotham';
+     font-style: normal;
+     font-weight: $bold;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-Black_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-Black_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+     font-family: 'Gotham';
+     font-style: italic;
+     font-weight: $bold;
+     font-display: swap;
+     src: local(''),
+         url('../webfonts/GothamSSm-BlackItalic_Web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../webfonts/GothamSSm-BlackItalic_Web.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

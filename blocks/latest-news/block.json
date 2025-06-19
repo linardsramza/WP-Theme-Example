@@ -1,0 +1,25 @@
+{
+	"name": "acf/latest-news",
+	"title": "Latest news",
+	"category": "common",
+	"icon": "grid-view",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "latest-news.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

@@ -1,0 +1,18 @@
+.welcome-panel-header {
+	padding: 28px 330px 40px 48px;
+}
+@media screen and (max-width: 600px) {
+	.welcome-panel-header {
+		padding: 32px 32px 64px;
+	}
+}
+.welcome-panel-header p.welcome-panel-text {
+	font-size: 16px;
+}
+
+[class*="welcome-panel-icon"] {
+	background-color: #1d2327;
+	background-position: center;
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+}

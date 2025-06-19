@@ -1,0 +1,65 @@
+.management-listing {
+
+    &__description {
+        margin-bottom: 40px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 24px;
+        background-color: $light-gray;
+        border-radius: $global-radius * 2;
+        overflow: hidden;
+        display: flex;
+        align-items: stretch;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 12px;
+        }
+
+        &--image {
+            max-width: 160px;
+
+            @include media-breakpoint-down(md) {
+                max-width: 88px;
+            }
+            
+            img {
+                vertical-align: top;
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            padding: 72px 28px;
+
+            @include media-breakpoint-down(md) {
+                padding: 33px 16px;
+            }
+        }
+
+        &--name {
+            @extend .h5;
+            margin-bottom: 0;
+        }
+
+        &--position {
+            font-size: 16px;
+            font-weight: $light;
+            line-height: 150%;
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+    }
+}

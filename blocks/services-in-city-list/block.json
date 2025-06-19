@@ -1,0 +1,25 @@
+{
+	"name": "acf/services-in-city-list",
+	"title": "Services in city list",
+	"category": "widgets",
+	"icon": "admin-links",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "services-in-city-list.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

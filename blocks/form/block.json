@@ -1,0 +1,31 @@
+{
+	"name": "acf/form",
+	"title": "Form",
+	"category": "common",
+	"icon": "forms",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "form.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true,
+	"themeVendorScripts": [
+		"choices.min.js"
+	],
+	"themeVendorStyles": [
+		"choices.min.css"
+	]
+}

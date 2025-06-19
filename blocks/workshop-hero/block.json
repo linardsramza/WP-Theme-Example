@@ -1,0 +1,28 @@
+{
+	"name": "acf/workshop-hero",
+	"title": "Workshop hero",
+	"category": "workshop-blocks",
+	"icon": "megaphone",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "workshop-hero.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true,
+	"themeVendorScripts": [
+		"index.min.js"
+	]
+}

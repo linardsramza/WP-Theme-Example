@@ -1,0 +1,25 @@
+{
+	"name": "acf/cities-close-by",
+	"title": "Cities close by",
+	"category": "widgets",
+	"icon": "location-alt",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cities-close-by.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

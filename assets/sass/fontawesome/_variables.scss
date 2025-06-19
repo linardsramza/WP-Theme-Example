@@ -1,0 +1,210 @@
+// variables
+// --------------------------
+
+$fa-css-prefix          : fa !default;
+$fa-style               : 900 !default;
+$fa-style-family        : "Font Awesome 6 Pro" !default;
+
+$fa-display             : inline-block !default;
+
+$fa-fw-width            : fa-divide(20em, 16) !default;
+$fa-inverse             : #fff !default;
+
+$fa-border-color        : #eee !default;
+$fa-border-padding      : .2em .25em .15em !default;
+$fa-border-radius       : .1em !default;
+$fa-border-style        : solid !default;
+$fa-border-width        : .08em !default;
+
+$fa-size-scale-2xs      : 10 !default;
+$fa-size-scale-xs       : 12 !default;
+$fa-size-scale-sm       : 14 !default;
+$fa-size-scale-base     : 16 !default;
+$fa-size-scale-lg       : 20 !default;
+$fa-size-scale-xl       : 24 !default;
+$fa-size-scale-2xl      : 32 !default;
+
+$fa-sizes: (
+  "2xs"                 : $fa-size-scale-2xs,
+  "xs"                  : $fa-size-scale-xs,
+  "sm"                  : $fa-size-scale-sm,
+  "lg"                  : $fa-size-scale-lg,
+  "xl"                  : $fa-size-scale-xl,
+  "2xl"                 : $fa-size-scale-2xl
+) !default;
+
+$fa-li-width            : 2em !default;
+$fa-li-margin           : $fa-li-width * fa-divide(5, 4) !default;
+
+$fa-pull-margin         : .3em !default;
+
+$fa-primary-opacity     : 1 !default;
+$fa-secondary-opacity   : .4 !default;
+
+$fa-stack-vertical-align: middle !default;
+$fa-stack-width         : ($fa-fw-width * 2) !default;
+$fa-stack-z-index       : auto !default;
+
+$fa-font-display        : block !default;
+$fa-font-path           : "../webfonts" !default;
+
+$fa-var-angle-down: \f107;
+$fa-var-angle-left: \f104;
+$fa-var-angle-right: \f105;
+$fa-var-angle-up: \f106;
+$fa-var-arrow-down: \f063;
+$fa-var-arrow-down-long: \f175;
+$fa-var-long-arrow-down: \f175;
+$fa-var-arrow-left: \f060;
+$fa-var-arrow-left-long: \f177;
+$fa-var-long-arrow-left: \f177;
+$fa-var-arrow-right: \f061;
+$fa-var-arrow-right-long: \f178;
+$fa-var-long-arrow-right: \f178;
+$fa-var-arrow-up: \f062;
+$fa-var-arrow-up-long: \f176;
+$fa-var-long-arrow-up: \f176;
+$fa-var-badge-check: \f336;
+$fa-var-bars: \f0c9;
+$fa-var-navicon: \f0c9;
+$fa-var-car: \f1b9;
+$fa-var-automobile: \f1b9;
+$fa-var-chart-pie-simple: \f64e;
+$fa-var-chart-pie-alt: \f64e;
+$fa-var-check: \f00c;
+$fa-var-chevron-down: \f078;
+$fa-var-chevron-left: \f053;
+$fa-var-chevron-right: \f054;
+$fa-var-chevron-up: \f077;
+$fa-var-chevrons-left: \f323;
+$fa-var-chevron-double-left: \f323;
+$fa-var-chevrons-right: \f324;
+$fa-var-chevron-double-right: \f324;
+$fa-var-circle: \f111;
+$fa-var-circle-check: \f058;
+$fa-var-check-circle: \f058;
+$fa-var-clock: \f017;
+$fa-var-clock-four: \f017;
+$fa-var-clock-nine: \e34c;
+$fa-var-crosshairs: \f05b;
+$fa-var-engine: \e16e;
+$fa-var-envelope: \f0e0;
+$fa-var-gear-complex: \e5e9;
+$fa-var-house: \f015;
+$fa-var-home: \f015;
+$fa-var-home-alt: \f015;
+$fa-var-home-lg-alt: \f015;
+$fa-var-location-dot: \f3c5;
+$fa-var-map-marker-alt: \f3c5;
+$fa-var-magnifying-glass: \f002;
+$fa-var-search: \f002;
+$fa-var-meter-bolt: \e1e9;
+$fa-var-minus: \f068;
+$fa-var-subtract: \f068;
+$fa-var-oil-can-drip: \e205;
+$fa-var-period: \2e;
+$fa-var-phone: \f095;
+$fa-var-plug: \f1e6;
+$fa-var-plus: \2b;
+$fa-var-add: \2b;
+$fa-var-plus-large: \e59e;
+$fa-var-shield-check: \f2f7;
+$fa-var-tire: \f631;
+$fa-var-triangle-exclamation: \f071;
+$fa-var-exclamation-triangle: \f071;
+$fa-var-warning: \f071;
+$fa-var-wrench: \f0ad;
+$fa-var-xmark: \f00d;
+$fa-var-close: \f00d;
+$fa-var-multiply: \f00d;
+$fa-var-remove: \f00d;
+$fa-var-times: \f00d;
+$fa-var-xmark-large: \e59b;
+
+$fa-var-facebook-f: \f39e;
+$fa-var-instagram: \f16d;
+$fa-var-linkedin-in: \f0e1;
+
+$fa-icons: (
+  "angle-down": $fa-var-angle-down,
+  "angle-left": $fa-var-angle-left,
+  "angle-right": $fa-var-angle-right,
+  "angle-up": $fa-var-angle-up,
+  "arrow-down": $fa-var-arrow-down,
+  "arrow-down-long": $fa-var-arrow-down-long,
+  "long-arrow-down": $fa-var-long-arrow-down,
+  "arrow-left": $fa-var-arrow-left,
+  "arrow-left-long": $fa-var-arrow-left-long,
+  "long-arrow-left": $fa-var-long-arrow-left,
+  "arrow-right": $fa-var-arrow-right,
+  "arrow-right-long": $fa-var-arrow-right-long,
+  "long-arrow-right": $fa-var-long-arrow-right,
+  "arrow-up": $fa-var-arrow-up,
+  "arrow-up-long": $fa-var-arrow-up-long,
+  "long-arrow-up": $fa-var-long-arrow-up,
+  "badge-check": $fa-var-badge-check,
+  "bars": $fa-var-bars,
+  "navicon": $fa-var-navicon,
+  "car": $fa-var-car,
+  "automobile": $fa-var-automobile,
+  "chart-pie-simple": $fa-var-chart-pie-simple,
+  "chart-pie-alt": $fa-var-chart-pie-alt,
+  "check": $fa-var-check,
+  "chevron-down": $fa-var-chevron-down,
+  "chevron-left": $fa-var-chevron-left,
+  "chevron-right": $fa-var-chevron-right,
+  "chevron-up": $fa-var-chevron-up,
+  "chevrons-left": $fa-var-chevrons-left,
+  "chevron-double-left": $fa-var-chevron-double-left,
+  "chevrons-right": $fa-var-chevrons-right,
+  "chevron-double-right": $fa-var-chevron-double-right,
+  "circle": $fa-var-circle,
+  "circle-check": $fa-var-circle-check,
+  "check-circle": $fa-var-check-circle,
+  "clock": $fa-var-clock,
+  "clock-four": $fa-var-clock-four,
+  "clock-nine": $fa-var-clock-nine,
+  "crosshairs": $fa-var-crosshairs,
+  "engine": $fa-var-engine,
+  "envelope": $fa-var-envelope,
+  "gear-complex": $fa-var-gear-complex,
+  "house": $fa-var-house,
+  "home": $fa-var-home,
+  "home-alt": $fa-var-home-alt,
+  "home-lg-alt": $fa-var-home-lg-alt,
+  "location-dot": $fa-var-location-dot,
+  "map-marker-alt": $fa-var-map-marker-alt,
+  "magnifying-glass": $fa-var-magnifying-glass,
+  "search": $fa-var-search,
+  "meter-bolt": $fa-var-meter-bolt,
+  "minus": $fa-var-minus,
+  "subtract": $fa-var-subtract,
+  "oil-can-drip": $fa-var-oil-can-drip,
+  "period": $fa-var-period,
+  "phone": $fa-var-phone,
+  "plug": $fa-var-plug,
+  "plus": $fa-var-plus,
+  "add": $fa-var-add,
+  "plus-large": $fa-var-plus-large,
+  "shield-check": $fa-var-shield-check,
+  "tire": $fa-var-tire,
+  "triangle-exclamation": $fa-var-triangle-exclamation,
+  "exclamation-triangle": $fa-var-exclamation-triangle,
+  "warning": $fa-var-warning,
+  "wrench": $fa-var-wrench,
+  "xmark": $fa-var-xmark,
+  "close": $fa-var-close,
+  "multiply": $fa-var-multiply,
+  "remove": $fa-var-remove,
+  "times": $fa-var-times,
+  "xmark-large": $fa-var-xmark-large,
+);
+
+$fa-brand-icons: (
+  "facebook-f": $fa-var-facebook-f,
+  "instagram": $fa-var-instagram,
+  "linkedin-in": $fa-var-linkedin-in,
+);
+
+$fa-custom-icons: (
+);

@@ -1,0 +1,25 @@
+{
+	"name": "acf/booking-iframe",
+	"title": "Booking iframe",
+	"category": "common",
+	"icon": "editor-table",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "booking-iframe.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

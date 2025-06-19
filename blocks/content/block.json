@@ -1,0 +1,25 @@
+{
+	"name": "acf/content",
+	"title": "Content",
+	"category": "common",
+	"icon": "text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "content.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": false
+}

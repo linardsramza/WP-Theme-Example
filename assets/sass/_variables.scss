@@ -1,0 +1,65 @@
+// Theme colors
+$dark-blue: #14387F;
+$light-blue: #5BC5F2;
+$yellow: #FFCC00;
+$white: #FFF;
+$black: #000;
+$red: #E30713;
+$soft-gray: #B8C3D9;
+$light-gray: #E7EBF2;
+$hover-blue: #0D2554;
+$placeholder-color: #A6A6A6;
+$error-red: #D42F24;
+
+// Grid
+$grid: 1384px;
+$grid-narrow: 1150px;
+$grid-very-narrow: 915px;
+$grid-wide: 1464px;
+$gutter: 12px;
+$gutter-small: 6px;
+
+// Fonts
+$light: 325;
+$regular: 400;
+$bold: 600;
+
+// Widths
+$one: 8.333333%;
+$two: 16.666667%;
+$three: 25%;
+$four: 33.333333%;
+$five: 41.666667%;
+$six: 50%;
+$seven: 58.333333%;
+$eight: 66.666667%;
+$nine: 75%;
+$ten: 83.333333%;
+$eleven: 91.666667%;
+$twelve: 100%;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  menu-lg: 1100px,
+  xl: 1200px
+) !default;
+
+// Spacing
+$spacing: (
+  small-xs: 30px,
+  small-md: 50px,
+  small-lg: 60px,
+  medium-xs: 56px,
+  medium-md: 70px,
+  medium-lg: 80px,
+  large-xs: 60px,
+  large-md: 80px,
+  large-lg: 100px
+)!default;
+
+// Globals
+$global-radius: 4px;

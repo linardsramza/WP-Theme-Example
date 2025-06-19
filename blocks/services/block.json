@@ -1,0 +1,25 @@
+{
+	"name": "acf/services",
+	"title": "Services",
+	"category": "common",
+	"icon": "admin-tools",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "services.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"attributes": {
+		"theme_block_name": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"themeScripts": true
+}
